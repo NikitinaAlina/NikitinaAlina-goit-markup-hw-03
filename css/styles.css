@@ -67,28 +67,84 @@ li {
 .contact-number:focus {
   color: #404bbf;
 }
+.logotype {
+  margin-right: 76px;
+}
+
+.header {
+  padding-top: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-mail {
+  margin: 40px;
+}
+.link-menu {
+  display: flex;
+  margin-right: auto;
+  gap: 40px;
+}
+
+.contact-menu {
+  display: flex;
+  margin-left: auto;
+}
 /* -------------------hero-----------------------*/
+.container {
+  width: 1158px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin: 0 auto;
+}
 .hero {
   background: #2e2f42;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 188px 0;
+}
+.desc {
+  padding-top: 120px;
 }
 .title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   color: #ffffff;
+  width: 507px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .btn {
   font-family: inherit;
   line-height: 1.5;
   font-weight: 500;
   font-size: 16px;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 12px 24px;
+  min-width: 32px;
+  flex-basis: 56px;
+  height: 56px;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 .btn:hover,
 .btn:focus {
@@ -102,11 +158,20 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+}
+.portfolio-butn {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+  justify-content: center;
 }
 .potfolio-button:hover {
   background: #404bbf;
@@ -116,6 +181,40 @@ li {
   background: #404bbf;
   color: #ffffff;
 }
+
+.list-portfolio {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  width: ((100% - 48px) / 3);
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  padding-left: 0;
+}
+.portfolio {
+  padding-bottom: 120px;
+}
+.picture {
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+.pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.item-idea {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.list-menu {
+  margin-bottom: 8px;
+}
 .list-menu,
 .portfolio-item {
   font-weight: 500;
@@ -123,9 +222,24 @@ li {
   line-height: 1.2;
   color: #2e2f42;
 }
+.portfolio-item {
+  margin-bottom: 8px;
+}
 .text-menu,
 .portfolio-menu {
   color: #434455;
+}
+.list-icons {
+  display: flex;
+  gap: 24px;
+}
+.tagline {
+  padding-top: 120px;
+}
+.project {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 72px;
 }
 .project .team {
   font-weight: 700;
@@ -136,21 +250,45 @@ li {
 }
 .team {
   background: #f4f4fd;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.team-item {
+  padding: 32px;
+  text-align: center;
+  background: #ffffff;
+
+  border-radius: 0px 0px 4px 4px;
+}
+.list-icons-team {
+  gap: 24px;
+  display: flex;
+  width: calc((100% - 72px) / 4);
+  text-align: center;
 }
 .team-content {
   background: #f4f4fd;
+  padding-top: 120px;
 }
 .employee {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .profession {
   color: #434455;
 }
 .footer-content {
   background: #2e2f42;
+  margin-right: auto;
+  padding: 100px 0;
+  padding-right: 156px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 156px;
+  padding-left: 156px;
 }
 .logotype-footer {
   font-family: 'Raleway';
@@ -158,15 +296,15 @@ li {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  padding-bottom: 16px;
 }
 .logo-footer {
   color: #4d5ae5;
 }
 .text-footer {
   color: #e7e9fc;
+  width: 264px;
 }
